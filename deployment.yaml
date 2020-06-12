@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: everwell-app
+spec:
+    selector:
+        matchLabels:
+            app: everwell-nginx-app
+    replicas: 2
+    template:
+        metadata:
+            labels:
+                app: everwell-nginx-app
+        spec:
+            containers:
+            - name: progressive-weather-app
+              image: lbsdocker1/progressive-weather-app
+              ports:
+              - containerPort: 80
