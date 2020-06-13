@@ -2,7 +2,7 @@
     - name: Deploy to Kubernetes
       hosts: all 
       become: true
-      user: ec-user
+      user: ec2-user
      
       tasks: 
       - name: create a deployment
