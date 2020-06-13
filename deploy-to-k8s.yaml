@@ -1,8 +1,7 @@
 ---
     - name: Deploy to Kubernetes
-      hosts: kube-host 
-      become: true
-      user: ec2-user
+      hosts: localhost 
+      connection: local
      
       tasks: 
       - name: create a deployment
