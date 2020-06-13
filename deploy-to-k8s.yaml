@@ -5,7 +5,7 @@
      
       tasks: 
       - name: create a deployment
-        command: /usr/bin/local/kubectl apply -f deployment.yaml
+        command: /usr/local/bin/kubectl apply -f deployment.yaml
      
       - name: create a service
-        command: /usr/bin/local/kubectl apply -f service.yaml
+        command: /usr/bin/local/bin/kubectl apply -f service.yaml
