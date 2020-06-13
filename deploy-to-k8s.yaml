@@ -1,0 +1,12 @@
+---
+    - name: Deploy to Kubernetes
+      hosts: localhost 
+      become: true
+      user: ec-user
+     
+      tasks: 
+      - name: create a deployment
+        command: kubectl apply -f deployment.yml
+     
+      - name: create a service
+        command: kubectl apply -f service.yaml
