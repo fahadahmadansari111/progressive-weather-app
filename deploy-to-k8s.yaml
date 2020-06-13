@@ -1,6 +1,6 @@
 ---
     - name: Deploy to Kubernetes
-      hosts: all 
+      hosts: kube-host 
       become: true
       user: ec2-user
      
