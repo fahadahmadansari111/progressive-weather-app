@@ -14,6 +14,6 @@ spec:
         spec:
             containers:
             - name: progressive-weather-app
-              image: lbsdocker1/progressive-weather-app:BUILD_NUMBER
+              image: lbsdocker1/progressive-weather-app:BUILD
               ports:
               - containerPort: 80
